@@ -1,0 +1,39 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - Hello
+- intent: restaurant_search
+  examples: |
+    - please find me a restaurant
+    - [delhi](location)
+    - [South Indian](cuisine)
+    - between [300](price) to [700](price)
+    - saravana4285@gmail.com
+    - please find me a restaurant in [mumbai](location)
+    - [Italian](cuisine)
+    - Lesser than [300](price)
+    - can you find me a restaurant ?
+    - [Chinese]{"entity": "cuisine", "value": "chinese"}
+    - please find me a restaurant in [delhi](location)
+    - pls find me a restaurant in [chennai](location)
+    - please find me a restaurant in [delhi](location)
+    - please find a restaurant in [delhi](location)
+    - [Italian](cuisine)
+- intent: email
+  examples: |
+    - email
+    - saravana4285@gmail.com
+- intent: goodbye
+  examples: |
+    - bye
+- intent: affirm
+  examples: |
+    - lt700
+    - gt700
+    - lt300
+- synonym: chinese
+  examples: |
+    - Chinese
